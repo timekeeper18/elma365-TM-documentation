@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Документация</title>
+  <style>
+    :root {
+      --bg: #ffffff;
+      --text: #1d2433;
+      --muted: #5d6676;
+      --line: #d9dee7;
+      --accent: #1f5fbf;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #14181f;
+        --text: #e8ebf0;
+        --muted: #9aa3b2;
+        --line: #2b3240;
+        --accent: #6aa3ff;
+      }
+    }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+      line-height: 1.6;
+    }
+    main {
+      max-width: 640px;
+      margin: 0 auto;
+      padding: 48px 20px;
+    }
+    h1 { font-size: 1.8rem; margin: 0 0 8px; }
+    p.lead { color: var(--muted); margin: 0 0 32px; }
+    ul { list-style: none; padding: 0; margin: 0; border-top: 1px solid var(--line); }
+    li { border-bottom: 1px solid var(--line); }
+    a {
+      display: block;
+      padding: 16px 4px;
+      color: var(--accent);
+      text-decoration: none;
+      font-size: 1.1rem;
+    }
+    a:hover, a:focus-visible { text-decoration: underline; }
+    a span { display: block; color: var(--muted); font-size: 0.9rem; }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Документация</h1>
+    <p class="lead">Выберите документ.</p>
+    <ul>
+      <li>
+        <a href="ELMA365..html">
+          ELMA365
+          <span>Описание документа (можно изменить или удалить)</span>
+        </a>
+      </li>
+
+      <!-- Чтобы добавить новый документ, скопируйте блок <li>...</li> выше
+           и поменяйте href и название. Пример:
+      <li>
+        <a href="instruction2.html">
+          Название второго документа
+          <span>Краткое описание</span>
+        </a>
+      </li>
+      -->
+    </ul>
+  </main>
+</body>
+</html>
